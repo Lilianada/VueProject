@@ -1,24 +1,22 @@
-<script setup>
-import HelloWorld from "./components/HelloWorld.vue";
-import Test from "./components/Test.vue";
-</script>
-
 <template>
-  <header>
-    <img
-      alt="Vue logo"
-      class="logo"
-      src="./assets/logo.svg"
-      width="125"
-      height="125"
-    />
-
-    <div class="wrapper">
-      <HelloWorld msg="Did you do it?" />
-      <Test />
-    </div>
-  </header>
+  <div id="app">
+    <Test />
+    <Counter />
+  </div>
 </template>
+
+<script>
+import Test from "./components/Test.vue";
+import Counter from "./components/Counter.vue";
+
+export default {
+  name: "app",
+  components: {
+    Test,
+    Counter,
+  },
+};
+</script>
 
 <style scoped>
 header {

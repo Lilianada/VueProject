@@ -1,19 +1,16 @@
 <template>
   <div id="app">
-    <Test />
-    <Counter />
+    <Todo />
   </div>
 </template>
 
 <script>
-import Test from "./components/Test.vue";
-import Counter from "./components/Counter.vue";
+import Todo from "./components/TodoApp/Todo.vue";
 
 export default {
   name: "app",
   components: {
-    Test,
-    Counter,
+    Todo,
   },
 };
 </script>

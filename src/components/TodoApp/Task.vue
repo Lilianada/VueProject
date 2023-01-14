@@ -1,14 +1,14 @@
 <template>
-    <section>
-        <p class="task-name"></p>
+    <section :key="task.id" v-for="task in tasks">
+        <p class="task-name"> {{ task.name }}</p>
     </section>
 </template>
 
 <script>
     export default {
-        name: "task",
+        name: "Task",
         props: {
-            task: Object,
+            task: Array,
         },
         
     }
